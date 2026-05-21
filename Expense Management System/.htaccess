@@ -1,0 +1,8 @@
+# WatchMyWallet — Apache config
+# Deny direct access to includes folder
+Options -Indexes
+
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
